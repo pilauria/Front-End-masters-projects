@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    /*https://www.w3schools.com/css/css3_box-sizing.asp*/
+}
+
+.main-brand {
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Great Vibes', cursive;
+    /* shorthand for margin: top & bottom 60px, left & right 0px; 
+    (the same as margin: 60px 0 60px 0;)
+    margin: 60px, it will apply the same 60px margin in every side*/
+    margin: 60px 0;
+
+}
+
+.story-image {
+    width: 100%;
+}
+
+.story-title {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.story-text { /*space between text rows*/
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.story {
+    border: 1px solid #333;
+    padding: 5px;
+
+}
+
+.quarter {
+    width: 25%;
+    /*or:*/
+    /*flex: 1;*/
+}
+
+.half {
+    width: 50%;
+    /*or:*/
+    /*flex: 2;*/
+}
+.three-quarter {
+    width: 75%;
+    /*or:*/
+    /*flex: 3;*/
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-item {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item:nth-child(1) {background-color: #ffeaa7;}
+.nav-item:nth-child(2) {background-color: #81ecec;}
+.nav-item:nth-child(3) {background-color: #55efc4;}
+.nav-item:nth-child(4) {background-color: #74b9ff;}
+.nav-item:nth-child(5) {background-color: #a29bfe;}
+
+.nav-item a {
+    text-decoration: none;
+    color: #555;
+}
+
+.nav-item :hover {
+    text-decoration: underline;
+}
